@@ -1,0 +1,93 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: var(--color-white);
+  padding: 6rem 1rem;
+
+  // Animated gradient background
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary),
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 10s linear infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../../public/photoAssets/hero.jpg') center/cover no-repeat;
+    opacity: 0.3; // keeps hero image subtle
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2; // ensures text is above background and overlay
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    line-height: 1.2;
+    background: linear-gradient(
+      135deg,
+      white,
+      var(--color-secondary)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.4;
+    padding-left: 2rem;
+  color: white;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Keyframes for the moving gradient
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
