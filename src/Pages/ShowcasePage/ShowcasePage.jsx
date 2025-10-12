@@ -56,7 +56,7 @@ export const projects = [
       "Knex",
       "PlanetScale",
     ],
-    liveUrl: "https://www.joshuajeyphotography.com/",
+    liveUrl: "https://find-shelter-toronto.netlify.app/",
     githubUrl: "https://github.com/JoshuaJeyaranjan/shelter-client.git",
     backendUrl: "https://github.com/JoshuaJeyaranjan/shelter-server.git",
     featured: true,
