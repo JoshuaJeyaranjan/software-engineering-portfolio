@@ -39,7 +39,7 @@ export const projects = [
     liveUrl: "https://dreamworxautobody.com/",
     githubUrl: "https://github.com/JoshuaJeyaranjan/dreamworx-client.git",
     backendUrl: null,
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -79,7 +79,7 @@ export const projects = [
     liveUrl: "https://www.joshuajeyphotography.com/",
     githubUrl: "https://github.com/JoshuaJeyaranjan/Photography2025",
     backendUrl: "https://github.com/JoshuaJeyaranjan/Photography2025Server.git",
-    featured: false,
+    featured: true,
   },
   {
     id: 5,
