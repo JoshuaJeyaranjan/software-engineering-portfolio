@@ -49,26 +49,26 @@ function HomePage() {
               <h3>Frontend</h3>
               <div className="skill__tags">
                 <span className="skill__tag">React</span>
-                <span className="skill__tag">JavaScript</span>
-                <span className="skill__tag">TypeScript</span>
+                <span className="skill__tag">JavaScript</span>          
                 <span className="skill__tag">HTML5</span>
                 <span className="skill__tag">CSS3</span>
-                <span className="skill__tag">Sass</span>
-                <span className="skill__tag">Vue.js</span>
-                <span className="skill__tag">Next.js</span>
+               <span className="skill__tag">Sass</span>                
+                <span className="skill__tag">Tailwind</span>
+                
+ 
               </div>
             </div>
             <div className="skill__category">
               <h3>Backend</h3>
               <div className="skill__tags">
                 <span className="skill__tag">Node.js</span>
-                <span className="skill__tag">Python</span>
+                <span className="skill__tag">Axios</span>
                 <span className="skill__tag">Express</span>
-                <span className="skill__tag">Django</span>
+                <span className="skill__tag">MySQL</span>
                 <span className="skill__tag">PostgreSQL</span>
                 <span className="skill__tag">MongoDB</span>
                 <span className="skill__tag">REST APIs</span>
-                <span className="skill__tag">GraphQL</span>
+                <span className="skill__tag">Beekeeper Studio</span>
               </div>
             </div>
             <div className="skill__category">
@@ -76,12 +76,16 @@ function HomePage() {
               <div className="skill__tags">
                 <span className="skill__tag">Git</span>
                 <span className="skill__tag">Docker</span>
-                <span className="skill__tag">AWS</span>
-                <span className="skill__tag">Vercel</span>
+                <span className="skill__tag">AWS</span>                
                 <span className="skill__tag">Netlify</span>
                 <span className="skill__tag">Jest</span>
                 <span className="skill__tag">Webpack</span>
                 <span className="skill__tag">Vite</span>
+                <span className="skill__tag">Supabase</span>
+                <span className="skill__tag">Render</span>
+                <span className="skill__tag">Planet Scale</span>
+                <span className="skill__tag">Stripe</span>
+                <span className="skill__tag">Google Maps Api</span>
               </div>
             </div>
           </div>
