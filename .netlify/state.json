@@ -1,3 +1,21 @@
 {
-	"siteId": "6564619c-bf12-4cee-906e-e42bcbbc564e"
+	"siteId": "c9557b64-4d51-4f8c-b174-8358067fe04d",
+	"geolocation": {
+		"data": {
+			"city": "Toronto",
+			"country": {
+				"code": "CA",
+				"name": "Canada"
+			},
+			"subdivision": {
+				"code": "ON",
+				"name": "Ontario"
+			},
+			"timezone": "America/Toronto",
+			"latitude": 43.6508,
+			"longitude": -79.4803,
+			"postalCode": "M6S"
+		},
+		"timestamp": 1760384547527
+	}
 }
