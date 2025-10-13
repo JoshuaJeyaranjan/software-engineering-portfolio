@@ -11,7 +11,7 @@ function ContactPage() {
     message: "",
   });
   const [status, setStatus] = useState("");
-
+  const [statusClass, setStatusClass] = useState('');
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -23,7 +23,7 @@ function ContactPage() {
 const handleSubmit = async (e) => {
   e.preventDefault();
   setStatus("Sending...");
-
+  setStatusClass('loading')
   try {
     const res = await fetch("/.netlify/functions/contact", {
       method: "POST",
@@ -45,13 +45,16 @@ const handleSubmit = async (e) => {
 
     if (res.ok) {
       setStatus("Thank you for your message! I'll get back to you soon.");
+      setStatusClass('success')
       setFormData({ name: "", email: "", subject: "", message: "" });
     } else {
-      setStatus(data.error || "Failed to send message");
+     setStatus(data.error || "Failed to send message");
+     setStatusClass('error')
     }
   } catch (err) {
     console.error(err);
     setStatus("There was an error sending your message. Please try again later.");
+    setStatusClass('error')
   }
 };
 
@@ -191,8 +194,9 @@ const handleSubmit = async (e) => {
                 <button type="submit" className="btn btn--primary btn--full">
                   Send Message
                 </button>
-                <p className="form-status">{status}</p>
-              </form>
+                <p className={`form-status ${statusClass}`}>{status}</p>
+
+                </form>
             </div>
           </div>
         </div>
