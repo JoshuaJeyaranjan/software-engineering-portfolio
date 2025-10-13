@@ -10,6 +10,7 @@ function ContactPage() {
     subject: "",
     message: "",
   });
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -18,13 +19,41 @@ function ContactPage() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to a backend or email service
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("Sending...");
+
+  try {
+    const res = await fetch("/.netlify/functions/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
+
+    let data;
+    try {
+      data = await res.json(); // try parsing JSON
+    } catch (err) {
+      data = {}; // fallback if no JSON returned
+    }
+
+    if (res.ok) {
+      setStatus("Thank you for your message! I'll get back to you soon.");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      setStatus(data.error || "Failed to send message");
+    }
+  } catch (err) {
+    console.error(err);
+    setStatus("There was an error sending your message. Please try again later.");
+  }
+};
 
   return (
     <div className="contact-page">
@@ -162,6 +191,7 @@ function ContactPage() {
                 <button type="submit" className="btn btn--primary btn--full">
                   Send Message
                 </button>
+                <p className="form-status">{status}</p>
               </form>
             </div>
           </div>

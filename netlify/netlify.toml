@@ -6,6 +6,7 @@ service_cb91jx9
 publish = "/Users/joshuajeyaranjan/Desktop/SEPortfolio-1/SEPortfolio/dist"
 publishOrigin = "ui"
 commandOrigin = "ui"
+functions = 'netlify/functions'
 base = "/Users/joshuajeyaranjan/Desktop/SEPortfolio-1/SEPortfolio"
 command = "npm run build"
 
