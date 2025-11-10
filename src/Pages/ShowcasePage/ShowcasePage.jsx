@@ -26,7 +26,7 @@ export const projects = [
     "Sharp",
     
   ],
-  liveUrl: "https://demetriose.netlify.app/",
+  liveUrl: "https://dfsvision.com/",
   githubUrl: "https://github.com/JoshuaJeyaranjan/DSP-.git",
   backendUrl: "https://github.com/JoshuaJeyaranjan/thumbnail-service.git",
   featured: true,
