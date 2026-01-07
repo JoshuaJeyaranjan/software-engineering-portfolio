@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 
 import './App.css'
 
@@ -10,15 +10,15 @@ import AdminPage from './Pages/AdminPage/AdminPage';
 import BlogPage from './Pages/BlogPage/BlogPage';
 import { ShowcasePage } from './Pages/ShowcasePage/ShowcasePage';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
-
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />

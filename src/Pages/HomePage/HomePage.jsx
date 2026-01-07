@@ -4,7 +4,7 @@ import Nav from "../../Components/Nav/Nav";
 import Banner from "../../Components/Banner/Banner";
 import Footer from "../../Components/Footer/Footer";
 import { projects } from "../ShowcasePage/ShowcasePage";
-
+import { Link } from "react-router-dom";
 const featuredProjects = projects.filter((project) => project.featured);
 
 
@@ -26,12 +26,12 @@ function HomePage() {
             problems through code.
           </p>
           <div className="hero__buttons">
-            <a href="#projects" className="btn btn--primary">
+            <Link to="/projects" className="btn btn--primary">
               View My Work
-            </a>
-            <a href="#contact" className="btn btn--secondary">
+            </Link>
+            <Link to="/contact" className="btn btn--secondary">
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero__image">
