@@ -68,7 +68,6 @@ function HomePage() {
                 <span className="skill__tag">PostgreSQL</span>
                 <span className="skill__tag">MongoDB</span>
                 <span className="skill__tag">REST APIs</span>
-                <span className="skill__tag">Beekeeper Studio</span>
               </div>
             </div>
             <div className="skill__category">
@@ -86,6 +85,8 @@ function HomePage() {
                 <span className="skill__tag">Planet Scale</span>
                 <span className="skill__tag">Stripe</span>
                 <span className="skill__tag">Google Maps Api</span>
+                <span className="skill__tag">Cloudinary</span>
+                <span className="skill__tag">Heroku</span>
               </div>
             </div>
           </div>
