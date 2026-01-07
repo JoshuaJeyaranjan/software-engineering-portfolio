@@ -47,7 +47,7 @@ const Footer = () => {
             <h4 className="footer__subtitle">Connect</h4>
             <div className="footer__social">
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/joshua-jeyaranjan/"
                 className="footer__social-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const Footer = () => {
                 </img>
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/JoshuaJeyaranjan"
                 className="footer__social-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const Footer = () => {
                 </img>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:joshuajeyaranjan@gmail.com"
                 className="footer__social-link"
                 aria-label="Email"
               >

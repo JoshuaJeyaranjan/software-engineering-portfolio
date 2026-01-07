@@ -133,7 +133,7 @@ function HomePage() {
               <p>Ready to work together or have a question about my work?</p>
               <div className="contact__links">
                 <a
-                  href="https://www.linkedin.com/in/joshuajeyaranjan/"
+                  href="https://www.linkedin.com/in/joshua-jeyaranjan/"
                   className="contact__link"
                   target="_blank"
                   rel="noopener noreferrer"
