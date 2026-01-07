@@ -107,54 +107,66 @@
   gap: 1.5rem;
 }
 
-.contact-method {
+.contact-method__link {
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
   padding: 1.5rem;
   background: var(--color-white);
   border-radius: 12px;
-  
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-  &:hover {
-    transform: translateY(-3px);
-    outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(74, 135, 249, 0.1);;
-  }
-  &__link {
-    text-decoration: none;
-    color: var(--color-text-primary);
-  }
-  &__icon {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-      135deg,
-      var(--color-primary),
-      var(--color-secondary)
-    );
-    border-radius: 50%;
-    color: var(--color-white);
-  }
+.contact-method__link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(74, 135, 249, 0.18);
+}
 
-  &__content {
-    h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: var(--color-primary);
-    }
+.contact-method__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 135, 249, 0.4);
+}
 
-    p {
-      color: var(--color-text-secondary);
-      margin: 0;
-    }
-  }
+.contact-method__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-method__image {
+  width: 2rem;
+  transition: filter 0.3s ease;
+}
+
+[data-theme='light'] .contact-method__image {
+  filter: invert(1);
+}
+
+[data-theme='dark'] .contact-method__image {
+  filter: invert(0);
+}
+
+.contact-method__content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-primary);
+}
+
+.contact-method__content span {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
 }
 
 .contact-form-container {

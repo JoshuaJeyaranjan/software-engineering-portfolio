@@ -80,7 +80,7 @@ export const projects = [
 },
 {
   id: 2,
-  title: "Auto-body Shop Website",
+  title: "Auto-body Shop Site",
   description:
     "Modern, high-performance business website for DreamWorx Auto Body, featuring dynamic service sections, integrated contact forms via EmailJS, responsive design, Google Maps API integration, and custom animations built with React and Sass. The site emphasizes user accessibility, SEO optimization, and brand identity through fluid visuals and interactive UI elements, developed with a Vite-powered React stack for speed and scalability.",
   image: "/photoAssets/Projects/Autobody/autobody-hero.avif",
@@ -92,6 +92,7 @@ export const projects = [
     "React Router",
     "Google Maps API",
     "Netlify",
+    
   ],
   liveUrl: "https://dreamworxautobody.com/",
   githubUrl: "https://github.com/JoshuaJeyaranjan/dreamworx-client.git",
@@ -123,20 +124,21 @@ export const projects = [
 },
 {
   id: 6,
-  title: "Online Resume",
+  title: "Renovation Company Site",
   description:
-    "Interactive, single-page online resume designed to showcase personal branding, professional experience, and portfolio highlights through a clean and modern UI. Built with React and Vite for fast load performance, it features smooth Framer Motion animations, responsive Sass styling, and a modular component architecture optimized for maintainability. Deployed on Netlify, the site emphasizes accessibility, cross-device consistency, and pixel-perfect design execution.",
-  image: "/photoAssets/Projects/Marketing/marketing.avif",
+    "Single-page, service-oriented web application engineered to present a renovation company’s full operational offerings while providing a direct client-to-business contact pipeline. Built with React and Vite for optimized bundle delivery and fast client-side rendering, the platform leverages a component-driven architecture, Framer Motion for declarative UI animations, and Sass for scalable, theme-aware styling. Deployed via Netlify with automated CI/CD, the application emphasizes accessibility, responsive layout systems, and maintainable front-end engineering patterns to support long-term business growth and lead conversion.",
+  image: "/photoAssets/Projects/Reno/reno-hero.avif",
   technologies: [
     "React",
     "Vite",
     "Sass",
     "Netlify",
     "React Router",
-    "EmailJS"
+    "EmailJS",
+    "Cloudinary"
   ],
-  liveUrl: "https://daniel-marketing.netlify.app/",
-  githubUrl: "https://github.com/JoshuaJeyaranjan/daniel-marketing.git",
+  liveUrl: "https://camarun.netlify.app/",
+  githubUrl: "https://github.com/JoshuaJeyaranjan/reno",
   backendUrl: null,
   featured: false,
 },
